@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_dzikir_pagi.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_a__ayat__kursi_.xml" value="0.28553770086526575" />
+        <entry key="app/src/main/res/layout/fragment_b__al__ikhlas_.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_c__al__falaq_.xml" value="0.4912621359223301" />
+        <entry key="app/src/main/res/layout/fragment_d__an__naas_.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/fragment_e__doa__perlinungan_.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_f__doa_berserah__diri_.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/fragment_g__sayyidul__istighfar_.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/fragment_h_.xml" value="0.17119565217391305" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

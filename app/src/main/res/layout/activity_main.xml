@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1623"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_bg_main"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_main" />
+
+    <ImageView
+        android:id="@+id/btn_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/button_menu" />
+
+    <TextView
+        android:id="@+id/txtJagoDzikir"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Jago Dzikir"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtPagiPetang"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtJagoDzikir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Pagi &amp; Petang"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:layout_below="@id/txtPagiPetang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/txtAmalanDzikirPagiPetang"
+        style="@style/TextAppearance.Material3.BodyLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Amalan Dzikir Pagi &amp; Petang"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/txtAmalanDzikirPagiPetang"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/bismillah" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/image_bg_main"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_pagi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_primary"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgPagi"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/dzikir_pagi" />
+
+                <TextView
+                    android:id="@+id/textDzikirPagi"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/imgPagi"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Dzikir Pagi"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDzikirPagi"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/imgPagi"
+                    android:text="Antara subuh hingga siang hari ketika matahari akan bergeser ke barat"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd_petang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_primary"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imgPetang"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/dzikir_petan" />
+
+                <TextView
+                    android:id="@+id/textDzikirPetang"
+                    style="@style/TextAppearance.Material3.TitleMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@id/imgPetang"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Dzikir Pentang"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textDzikirPetang"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/imgPetang"
+                    android:text="Dari tenggelam matahari atau waktu maghrib hingga pertengahan malam"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
